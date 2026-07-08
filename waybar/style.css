@@ -9,7 +9,6 @@
 
 window#waybar{
 	background: rgba(0, 0, 0, 0.0);
-	color: @background;
 	margin: 8px;
 
 }
@@ -27,11 +26,11 @@ window#waybar{
 	background: rgba(20, 20, 20, 0.8);
 	border-radius: 99px;
 	padding: 2px;
-	color: @on_surface_container;
+	color: @on_surface;
 }
 
 #custom-logo, #custom-code,#custom-terminal, #custom-browser, #custom-files, #custom-wlogout {
-	color: @on_surface_container;
+	color: @on_surface;
 	padding: 0 16px;
 }
 

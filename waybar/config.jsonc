@@ -49,7 +49,10 @@
 		},
 		"status-icons": {
 			"paused": ""
-		}
+		},
+		"title-len": 15,
+		"artist-len": 15
+
 	},
 	"tray": {
 		"spacing": 10
