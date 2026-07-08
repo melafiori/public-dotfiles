@@ -2,7 +2,7 @@
 
 Just made them so i can keep them in case i delete everything or something.
 
-### What i use:
+### What I use:
 * **WM:** Hyprland
 * **Terminal:** Kitty
 * **Theme:** Matugen
