@@ -1,0 +1,66 @@
+{
+	"layer": "top",
+	"position": "top",
+	"height": 30,
+	"spacing": 4,
+	"include": "~/.config/waybar/groups/distro.json",
+
+	"modules-left": [
+		"group/distro",
+		"hyprland/workspaces"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"mpris",
+		"pulseaudio"
+	],
+
+	// Left modules
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"default": ""
+		},
+		"persistent-workspaces": {
+			"HDMI-A-1": [1, 2, 3, 4, 5],
+			"DP-1": [6, 7, 8, 9, 10]
+		}
+	
+	},
+	
+	// Middle modules
+	"clock": {
+		"format": " {:%I:%M %p}"
+	},
+	
+
+	// Right modules
+	"mpris": {
+		"format": "{player_icon} {title} - {artist}",
+		"format-paused": "{status_icon} <i>{title} - {artist}</i>",
+		"player-icons": {
+			"default": ""
+		},
+		"status-icons": {
+			"paused": ""
+		}
+	},
+	"tray": {
+		"spacing": 10
+	},
+	"pulseaudio": {
+		"format": "{volume}% {icon}",
+		"format-muted": "",
+		"format-icons": {
+			"default": ["", "", ""]
+		},
+		"on-click": "pavucontrol"
+	}
+
+	
+	
+
+}

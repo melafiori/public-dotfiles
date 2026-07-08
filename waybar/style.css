@@ -1,0 +1,125 @@
+@import "colors.css";
+
+* {
+	font-family: "SpaceMono Nerd Font", "JetBrainsMono Nerd Font Propo",  sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 19px;
+}
+
+window#waybar{
+	background: rgba(0, 0, 0, 0.0);
+	color: @background;
+	margin: 8px;
+
+}
+
+.modules-left {
+	margin-left: 12px;
+}
+
+.modules-right {
+	margin-right: 12px;
+}
+
+
+#distro {
+	background: rgba(20, 20, 20, 0.8);
+	border-radius: 99px;
+	padding: 2px;
+	color: @on_surface_container;
+}
+
+#custom-logo, #custom-code,#custom-terminal, #custom-browser, #custom-files, #custom-wlogout {
+	color: @on_surface_container;
+	padding: 0 16px;
+}
+
+#clock {
+	background-color: rgba(20, 20, 20, 0.8);
+	margin: 0 15 0 0;	
+	padding: 0 15 0 15px;
+}
+
+#custom-updates, #mpris, #pulseaudio {
+	background-color: rgba(20, 20, 20, 0.8);
+	margin: 0 0 0 15;
+	padding: 0 15 0 15px;
+}
+
+#workspaces {
+	background: rgba(20, 20, 20, 0.8);
+	padding: 0 0 0 0;
+}
+
+#workspaces button {
+    transition: all 0.25s ease; 
+}
+
+
+#workspaces button.active, #workspaces button.visible {
+	background: @primary;
+	color: @surface_container;
+}
+
+#workspaces button.urgent {
+	background: @error;
+	color: white;
+}
+
+window#waybar.empty #window {
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+
+}
+
+
+tooltip {
+    background: @surface_container_high;
+    border: 2px solid @outline;
+    border-radius: 14px;
+    padding: 8px 12px;
+}
+
+tooltip label {
+    color: @on_background;
+}
+
+#mpris, #pulseaudio {
+    color: @on_surface_container;
+   
+    text-shadow: 0px 1px 0px alpha(@on_background, 0.3);
+    box-shadow: inset 0px 1px 3px alpha(#000000, 0.2);
+}
+
+#clock, #window {
+    color: @on_surface_container;
+    
+    font-weight: 800;
+    padding: 0px 18px;
+    text-shadow: 0px 1px 0px alpha(@on_background, 0.4);
+    box-shadow: inset 0px 1px 3px alpha(#000000, 0.2);
+}
+
+
+#custom-arch {
+	color: @on_surface_container;
+    	text-shadow: 0px 1px 0px alpha(@on_background, 0.3);
+	box-shadow: inset 0px 1px 3px alpha(#000000, 0.2);
+}
+
+#mpris.paused {
+	color: @surface_container;
+	background: @tertiary;
+	text-shadow: 0px 1px 0px alpha(@on_background, 0.4);
+}
+
+#pulseaudio.muted {
+    color: @surface_container;
+    background: @error;
+    text-shadow: 0px 1px 0px alpha(@on_background, 0.4);
+}
+
+

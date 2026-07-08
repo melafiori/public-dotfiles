@@ -1,0 +1,54 @@
+{
+	"group/distro": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-visible",
+			"click-to-reveal": false
+		},
+		"modules": [
+			"custom/logo",
+			"custom/code",
+			"custom/terminal",
+			"custom/browser",
+			"custom/files",
+			"custom/wlogout"
+		]
+	},
+
+	"custom/logo": {
+		"format": "󰣇",
+		"tooltip": false
+	},
+
+	"custom/code": {
+		"format": "",
+		"tooltip-format": "Open code",
+		"on-click": "code"
+	},
+
+	"custom/terminal": {
+		"format": "",
+		"tooltip-format": "Open terminal",
+		"on-click": "kitty"
+	},
+	
+	"custom/browser": {
+		"format": "󰈹",
+		"tooltip-format": "Open firefox",
+		"on-click": "firefox"
+	},
+
+	"custom/files": {
+	    "format": "",
+	    "on-click": "kitty -e yazi",
+	    "tooltip-format": "Open file manager (yazi)"
+    },
+	"custom/wlogout": {
+	    "format": "",
+	    "on-click": "wlogout",
+	    "tooltip-format": "Open power menu"
+    }
+
+
+}
