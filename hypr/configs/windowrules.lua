@@ -72,7 +72,6 @@ hl.window_rule({
 })
 
 
-
 -- vlc float
 hl.window_rule({
 	match = {
@@ -83,7 +82,7 @@ hl.window_rule({
 	size = "800 600"
 })
 
--- qimgv float
+-- feh float
 hl.window_rule({
     match = { 
 	    class = "feh" 
@@ -106,12 +105,7 @@ hl.window_rule({ match = { class = "vesktop"}, 	opacity = "0.92" })
 
 
 -- Waybar blur
-hl.layer_rule({
-	match = {
-		namespace = "waybar"
-	},
-	blur = false
-})
+hl.layer_rule({ match = { namespace = "waybar" }, blur = false })
 
 
 -- Example window rules that are useful
@@ -140,19 +134,3 @@ hl.window_rule({
     no_focus = true,
 })
 
--- Layer rules also return a handle.
--- local overlayLayerRule = hl.layer_rule({
---     name  = "no-anim-overlay",
---     match = { namespace = "^my-overlay$" },
---     no_anim = true,
--- })
--- overlayLayerRule:set_enabled(false)
-
--- Hyprland-run windowrule
-hl.window_rule({
-    name  = "move-hyprland-run",
-    match = { class = "hyprland-run" },
-
-    move  = "20 monitor_h-120",
-    float = true,
-})
