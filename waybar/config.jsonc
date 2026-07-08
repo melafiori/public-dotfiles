@@ -1,6 +1,7 @@
 {
 	"layer": "top",
 	"position": "top",
+	"margin-top": 5,
 	"height": 30,
 	"spacing": 4,
 	"include": "~/.config/waybar/groups/distro.json",
@@ -33,7 +34,9 @@
 	
 	// Middle modules
 	"clock": {
-		"format": " {:%I:%M %p}"
+		"format": " {:%I:%M %p}",
+		"format-alt": " {:%a, %b %d}",
+		"tooltip-format": "{:%A, %B %d, %Y}"
 	},
 	
 
@@ -53,14 +56,14 @@
 	},
 	"pulseaudio": {
 		"format": "{volume}% {icon}",
-		"format-muted": "",
+		"format-muted": "0% ",
 		"format-icons": {
 			"default": ["", "", ""]
 		},
-		"on-click": "pavucontrol"
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol",
+		"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+		"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 	}
-
-	
-	
 
 }

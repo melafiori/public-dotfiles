@@ -1,0 +1,29 @@
+# ========================
+# Wofi Configuration
+# =====================
+
+width=420
+height=200
+location=center
+orientation=vertical
+
+show=drun
+prompt=Applications...
+normal_window=false
+allow_images=true
+image_size=24
+hide_scroll=true
+
+# search
+matching=fuzzy
+insensitive=true
+sort_order=default
+
+# Layout
+columns=1
+lines=8
+
+# Misc
+cache_file=/home/melafiori/.cache/wofi-drun
+gtk_dark=true
+no_actions=true
