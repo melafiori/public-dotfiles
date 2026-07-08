@@ -11,6 +11,8 @@ FILES=(
     "matugen:$HOME/.config/matugen"
     "wofi:$HOME/.config/wofi"
     "waybar:$HOME/.config/waybar"
+    "fastfetch:$HOME/.config/fastfetch"
+    "waypaper:$HOME/.config/waypaper"
 )
 
 echo "Starting dotfiles installation..."
