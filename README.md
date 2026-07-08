@@ -17,7 +17,7 @@ Just made them so i can keep them in case i delete everything or something.
   <img src="screenshots/desktop-4.png" width="45%" />
 </p>
 
-If you only want the wallpapers, [here](https://github.com/melafiori/public-dotfiles/tree/main/wallpapers).
+If you only want the wallpapers, [here](wallpapers/).
 
 # Prerequisites
 
