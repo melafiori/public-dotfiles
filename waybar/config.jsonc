@@ -82,6 +82,6 @@
 		"format": " {:%I:%M %p}",
 		"format-alt": " {:%A, %b %d}",
 		"tooltip-format": "{:%A, %B %d, %Y}"
-	},
+	}
 
 }
