@@ -4,18 +4,24 @@
 	"margin-top": 5,
 	"height": 30,
 	"spacing": 4,
-	"include": "~/.config/waybar/groups/distro.json",
+	"include": [
+		"~/.config/waybar/groups/distro.json",
+		"~/.config/waybar/groups/pc.json"
+	],
 
 	"modules-left": [
 		"group/distro",
-		"hyprland/workspaces"
+		"hyprland/workspaces",
+		"group/pc"
 	],
 	"modules-center": [
-		"clock"
+		""
 	],
 	"modules-right": [
 		"mpris",
-		"pulseaudio"
+		"pulseaudio#vol",
+		"pulseaudio#mic",
+		"clock"
 	],
 
 	// Left modules
@@ -32,14 +38,6 @@
 	
 	},
 	
-	// Middle modules
-	"clock": {
-		"format": " {:%I:%M %p}",
-		"format-alt": " {:%a, %b %d}",
-		"tooltip-format": "{:%A, %B %d, %Y}"
-	},
-	
-
 	// Right modules
 	"mpris": {
 		"format": "{player_icon} {title} - {artist}",
@@ -57,16 +55,33 @@
 	"tray": {
 		"spacing": 10
 	},
-	"pulseaudio": {
+	"pulseaudio#vol": {
 		"format": "{volume}% {icon}",
 		"format-muted": "0% ",
 		"format-icons": {
 			"default": ["", "", ""]
 		},
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-middle": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
 		"on-click-right": "pavucontrol",
 		"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
 		"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
-	}
+	},
+	"pulseaudio#mic": {
+		"format": "{format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "",
+		"tooltip": false,
+		"on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+		"on-click-right": "pavucontrol",
+		"on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
+		"on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%"
+	},
+
+	"clock": {
+		"format": " {:%I:%M %p}",
+		"format-alt": " {:%A, %b %d}",
+		"tooltip-format": "{:%A, %B %d, %Y}"
+	},
 
 }

@@ -1,0 +1,41 @@
+{
+    "group/pc": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-visible",
+            "click-to-reveal": true
+        },
+        "modules": [
+            "custom/monitor",
+            "cpu",
+            "memory",
+            "temperature"
+        ]
+    },
+
+    "custom/monitor": {
+        "format": "",
+        "tooltip-format": "Toggle system monitor"
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": "{usage}% ",
+        "tooltip-format": "CPU: {usage}%"
+    },
+    "memory": {
+        "interval": 10,
+        "format": "{used}GB ",
+        "tooltip-format": "Memory: {used}/{total} ({percentage}%)"
+    },
+    "temperature": {
+        "interval": 10,
+        "thermal-zone": 0,
+        "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C ",
+        "tooltip-format": "Temperature: {temperature}°C"
+    }
+    
+}
