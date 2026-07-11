@@ -1,8 +1,8 @@
-require("configs/keybindings")
-require("configs/autostart")
-require("configs/windowrules")
-require("configs/appearance")
-require("configs/monitors")
+require("modules/keybindings")
+require("modules/autostart")
+require("modules/windowrules")
+require("modules/appearance")
+require("modules/monitors")
 
 
 

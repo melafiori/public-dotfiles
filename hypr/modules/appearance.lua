@@ -2,42 +2,55 @@ local colors = require("../colors")
 
 hl.config({
 	general = {
-		gaps_in = 6,
-		gaps_out = 16,
+		gaps_in = 4,
+		gaps_out = 12,
+		gaps_workspaces = 50,
 
-		border_size = 0,
+		border_size = 1,
 
 		col = {
-			active_border	= colors.primary,
-			inactive_border	= colors.background,
+			active_border	= colors.primary_container,
+			inactive_border	= colors.surface,
 		},
 
 		resize_on_border = true,
 
 		allow_tearing = false,
 
-		layout = "master",
+		layout = "dwindle",
+		
+		snap = {
+			enabled = true
+		}
+
 	},
 
 	decoration = {
-		rounding	= 16,
-		rounding_power	= 6,
+		rounding	= 18,
 
 		active_opacity	= 1.0,
 		inactive_opacity= 0.9,
 
 		shadow = {
 			enabled		= true,
-			range		= 4,
-			render_power	= 3,
-			color		= colors.on_secondary,
+			range		= 30,
+			offset 	    = {0, 2},
+			render_power	= 4,
+			color		= colors.shadow,
 		},
 
 		blur = {
 			enabled	= true,
-			size	= 4,
+			size	= 14,
 			passes	= 3,
+			noise	= 0.01,
+			contrast= 1,
 			vibrancy= 0.2,
+			brightness= 1,
+			popups  = true,
+			popups_ignorealpha = 0.6,
+			input_methods = true,
+			input_methods_ignorealpha = 0.8
 		},
 	},
 

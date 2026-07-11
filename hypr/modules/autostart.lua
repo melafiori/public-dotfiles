@@ -1,4 +1,3 @@
-require("colors")
 -- env variables
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
@@ -9,24 +8,13 @@ hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 -- Auto starts
 hl.on("hyprland.start", function ()
-	hl.exec_cmd("hypridle")
-	hl.exec_cmd("hyprpm reload")
+	hl.exec_cmd("hypridle & hyprpm reload & hyprsunset")
 	hl.exec_cmd("hyprctl setcursor 'Miku Cursor' 30")
 	hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-theme 'THEME_NAME'")
-	hl.exec_cmd("hyprsunset")
-	hl.exec_cmd("flatpak run dev.vencord.Vesktop")
-	hl.exec_cmd("awww-daemon & firefox")
-	hl.exec_cmd("waybar")
-	hl.exec_cmd("kitty")
-	hl.exec_cmd("clipse -listen")
-	hl.exec_cmd("espanso start")
+	hl.exec_cmd("awww-daemon & firefox & waybar")
+	hl.exec_cmd("clipse -listen & espanso start")
 end)
 
--- split plugin
---local smw = require("split-monitor-workspaces")
---smw.setup({
---	workspace_count = 5,
---})
 
 -- plugin conf
 hl.config({
