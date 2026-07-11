@@ -12,10 +12,7 @@ Just made them so i can keep them in case i delete everything or something.
 
 ## Preview
 <p align="center">
-  <img src="screenshots/desktop-1.png" width="75%" />
-  <img src="screenshots/desktop-2.png" width="45%" />
-  <img src="screenshots/desktop-3.png" width="45%" />
-  <img src="screenshots/desktop-4.png" width="45%" />
+  <img src="screenshots/desktop-5.png" width="75%" />
 </p>
 
 If you only want the wallpapers, [here](wallpapers/).
