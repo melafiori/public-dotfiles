@@ -13,6 +13,7 @@ FILES=(
     "waybar:$HOME/.config/waybar"
     "fastfetch:$HOME/.config/fastfetch"
     "waypaper:$HOME/.config/waypaper"
+    "zshrc:$HOME/.zshrc"
 )
 
 echo "Starting dotfiles installation..."

@@ -29,6 +29,7 @@ Please make sure you have the following installed before using the install scrip
 - `kitty`
 - `waybar`
 - `waypaper`
+- `zsh`
 
 # Installation
 
