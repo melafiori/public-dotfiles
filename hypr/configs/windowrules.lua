@@ -96,7 +96,7 @@ hl.window_rule({
 
 -- Move apps to their respective workspace
 hl.window_rule({ match = { class = "vesktop" }, suppress_event = "activate", workspace = "6" })
-hl.window_rule({ match = { class = "steam" }, 	suppress_event = "activate", workspace = "7" })
+
 
 -- Opacity control
 hl.window_rule({ match = { class = "firefox" }, opaque = true })

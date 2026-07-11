@@ -34,3 +34,17 @@ output_path = '~/.config/waypaper/colors.css'
 [templates.yazi]
 input_path = '~/.config/matugen/templates/yazi_theme.toml'
 output_path = '~/.config/yazi/theme.toml'
+
+# VS Code matugen extension
+[templates.vscode-raw]
+input_path = './templates/vscode-colors'
+output_path = '~/.cache/matugen/vscode-colors'
+
+[templates.vscode-json]
+input_path = './templates/vscode-colors.json'
+output_path = '~/.cache/matugen/vscode-colors.json'
+
+[templates.quickshell]
+input_path = './templates/quickshell.json'
+output_path = '~/.local/state/quickshell/generated/colors.json'
+

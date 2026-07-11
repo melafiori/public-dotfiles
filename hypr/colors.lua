@@ -1,104 +1,104 @@
 return {
-    image = "/home/melafiori/Pictures/walls/wallhaven-jxjywy.png",
+    image = "/home/melafiori/Pictures/walls/wallhaven-rqjgym.png",
 
-    background = "0xff1a1110",
+    background = "0xff121318",
 
     error = "0xffffb4ab",
 
     error_container = "0xff93000a",
 
-    inverse_on_surface = "0xff392e2c",
+    inverse_on_surface = "0xff2f3036",
 
-    inverse_primary = "0xff904a42",
+    inverse_primary = "0xff4c5c92",
 
-    inverse_surface = "0xfff1dedc",
+    inverse_surface = "0xffe3e1e9",
 
-    on_background = "0xfff1dedc",
+    on_background = "0xffe3e1e9",
 
     on_error = "0xff690005",
 
     on_error_container = "0xffffdad6",
 
-    on_primary = "0xff561e18",
+    on_primary = "0xff1d2d61",
 
-    on_primary_container = "0xffffdad5",
+    on_primary_container = "0xffdce1ff",
 
-    on_primary_fixed = "0xff3b0906",
+    on_primary_fixed = "0xff03174b",
 
-    on_primary_fixed_variant = "0xff73342d",
+    on_primary_fixed_variant = "0xff344479",
 
-    on_secondary = "0xff442926",
+    on_secondary = "0xff2b3042",
 
-    on_secondary_container = "0xffffdad5",
+    on_secondary_container = "0xffdee1f9",
 
-    on_secondary_fixed = "0xff2c1512",
+    on_secondary_fixed = "0xff161b2c",
 
-    on_secondary_fixed_variant = "0xff5d3f3b",
+    on_secondary_fixed_variant = "0xff414659",
 
-    on_surface = "0xfff1dedc",
+    on_surface = "0xffe3e1e9",
 
-    on_surface_variant = "0xffd8c2bf",
+    on_surface_variant = "0xffc6c6d0",
 
-    on_tertiary = "0xff3f2e04",
+    on_tertiary = "0xff432740",
 
-    on_tertiary_container = "0xfffddfa6",
+    on_tertiary_container = "0xffffd7f6",
 
-    on_tertiary_fixed = "0xff261a00",
+    on_tertiary_fixed = "0xff2c122a",
 
-    on_tertiary_fixed_variant = "0xff574419",
+    on_tertiary_fixed_variant = "0xff5b3d57",
 
-    outline = "0xffa08c8a",
+    outline = "0xff8f909a",
 
-    outline_variant = "0xff534341",
+    outline_variant = "0xff45464f",
 
-    primary = "0xffffb4aa",
+    primary = "0xffb6c4ff",
 
-    primary_container = "0xff73342d",
+    primary_container = "0xff344479",
 
-    primary_fixed = "0xffffdad5",
+    primary_fixed = "0xffdce1ff",
 
-    primary_fixed_dim = "0xffffb4aa",
+    primary_fixed_dim = "0xffb6c4ff",
 
     scrim = "0xff000000",
 
-    secondary = "0xffe7bdb7",
+    secondary = "0xffc2c5dd",
 
-    secondary_container = "0xff5d3f3b",
+    secondary_container = "0xff414659",
 
-    secondary_fixed = "0xffffdad5",
+    secondary_fixed = "0xffdee1f9",
 
-    secondary_fixed_dim = "0xffe7bdb7",
+    secondary_fixed_dim = "0xffc2c5dd",
 
     shadow = "0xff000000",
 
-    source_color = "0xff8a1a15",
+    source_color = "0xff9899a5",
 
-    surface = "0xff1a1110",
+    surface = "0xff121318",
 
-    surface_bright = "0xff423735",
+    surface_bright = "0xff38393f",
 
-    surface_container = "0xff271d1c",
+    surface_container = "0xff1e1f25",
 
-    surface_container_high = "0xff322826",
+    surface_container_high = "0xff292a2f",
 
-    surface_container_highest = "0xff3d3231",
+    surface_container_highest = "0xff34343a",
 
-    surface_container_low = "0xff231918",
+    surface_container_low = "0xff1a1b21",
 
-    surface_container_lowest = "0xff140c0b",
+    surface_container_lowest = "0xff0d0e13",
 
-    surface_dim = "0xff1a1110",
+    surface_dim = "0xff121318",
 
-    surface_tint = "0xffffb4aa",
+    surface_tint = "0xffb6c4ff",
 
-    surface_variant = "0xff534341",
+    surface_variant = "0xff45464f",
 
-    tertiary = "0xffdfc38c",
+    tertiary = "0xffe3bada",
 
-    tertiary_container = "0xff574419",
+    tertiary_container = "0xff5b3d57",
 
-    tertiary_fixed = "0xfffddfa6",
+    tertiary_fixed = "0xffffd7f6",
 
-    tertiary_fixed_dim = "0xffdfc38c",
+    tertiary_fixed_dim = "0xffe3bada",
 
 }

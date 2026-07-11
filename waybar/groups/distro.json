@@ -4,7 +4,7 @@
 		"drawer": {
 			"transition-duration": 500,
 			"children-class": "not-visible",
-			"click-to-reveal": true
+			"click-to-reveal": false
 		},
 		"modules": [
 			"custom/logo",
